@@ -5,7 +5,7 @@ services:
     container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: userapimanagement
+      MYSQL_DATABASE: userdb
     ports:
       - "3307:3306"
     volumes:
@@ -19,7 +19,7 @@ services:
     depends_on:
       - mysql
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/userapimanagement
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/userdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
 
