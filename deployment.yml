@@ -16,7 +16,7 @@ spec:
         - name: user-container
           image: nehakhandagale25/my-app:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: k3
